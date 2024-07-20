@@ -15,8 +15,12 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="description" content="Welcome to the Whitehouse where the 47th president Donald Trump will Reside to Make America Great Again.">
+    <meta name="description" content="OnlyOneTrump.">
     <link rel="shortcut icon" href="main-logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
     <script type="text/javascript">
         WebFont.load({
             google: {
@@ -477,6 +481,8 @@
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, recusandae rerum? In!
                                 </p>
+                                <button id="myButton">OnlyOneTrump 2024</button>
+
                             </div>
                         </div>
                     </div>
@@ -485,17 +491,51 @@
         </main>
 
         </div>
-        <button id="myButton" >Click Me!</button>
+        <style>
+            .swal2-popup {
+        background:#0a1a3a;
+        background-size: cover;
+              font-family: head; /* Change to your desired font family */
+            }
+            .swal2-title {
+              font-family: head; /* Change to your desired font family for the title */
+              color: #fff; /* Change text color if needed */
+            
+            }
+            .swal2-content {
+              font-family: head; /* Change to your desired font family for the content */
+              color: #fff; /* Change text color if needed */
+            }
+            .swal2-confirm {
+      background-color: #da0000; /* Change to your desired button color */
+      color: #fff; /* Change text color if needed */
+      border: none; /* Remove border if needed */
+    }
+          </style>
+        
 
+      
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                // Get the element you want to click
-                var button = document.getElementById('myButton');
-                
-                // Simulate a click event
-                button.click();
-            });
-        </script>
+         document.addEventListener('DOMContentLoaded', (event) => {
+      Swal.fire({
+        title: 'Welcome!',
+       
+        icon: 'success',
+        confirmButtonText: 'Click to be part of this fight',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        },
+        customClass: {
+          popup: 'swal2-popup',
+          title: 'swal2-title',
+          content: 'swal2-content'
+        }
+      });
+    });
+          </script>
         <audio id="background-music" autoplay loop>
             <source src="/audio.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
